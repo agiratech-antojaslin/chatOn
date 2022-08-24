@@ -8,7 +8,7 @@ mongoose.connect(url, {useNewUrlParser: true});
 
 const con = mongoose.connection;
 con.on("open", () => {
-    console.log("Connected...")
+    console.log("Connected to database...")
 })
 
 const usersRouter = require("./routes/users");
